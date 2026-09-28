@@ -1,2 +1,2 @@
-# web-os-i-think-
+# Mart OS
 idk man first time using github
