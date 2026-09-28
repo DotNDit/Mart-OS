@@ -1,2 +1,2 @@
 # Mart OS
-idk man first time using github
+An OS themed in the style of Mart from Roblox Nullscape!
