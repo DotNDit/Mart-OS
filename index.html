@@ -30,17 +30,16 @@
 
     </div>
 
-    <div style="position: absolute; width: 11%; display: flex; justify-content: space-between;">
+    <div style="position: absolute; width: 11%; display: flex; justify-content: space-between; margin-right: 10px;">
 
       <p>
 
         Mart OS
 
       </p>
-      <p>
+      <p id="timeElement">
 
         9/29/2026 11:22 PM
-
 
       </p>
       
@@ -48,13 +47,11 @@
 
     <script>
 
-     var CurrentTime = new  date().toLocaleString();
+      setInterval(function() {
 
-    <p id="TimeElement" syt>
+        document.querySelector("#timeElement").innerHTML = new Date().toLocaleString();
 
-      Time
-
-    </p>
+      }, 1000);
 
     </script>
 
