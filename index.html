@@ -32,14 +32,14 @@
 
     </div>
 
-    <div style="position: absolute; width: 11%; display: flex; justify-content: space-between; margin-right: 10px;">
+    <div>
 
-      <p style="text-align: bottom-right;">
+      <p style="color: #fff">
 
         Mart OS
 
       </p>
-      <p id="timeElement">
+      <p id="timeElement" style="color: #fff">
 
         9/29/2026 11:22 PM
 
@@ -47,19 +47,9 @@
       
     </ddiv>
 
-    <script>
+    <script src="script.js"></script>
 
-      setInterval(function() {
-
-        document.querySelector("#timeElement").innerHTML = new Date().toLocaleString();
-
-      }, 1000);
-
-    </script>
-
-    <script src="script.js">  </script>
-
-    dragElement(document.getElementById("welcome"));
+    
     
   </body>
 
