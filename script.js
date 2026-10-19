@@ -1,6 +1,15 @@
 setInterval(function() {
 
-    document.querySelector("#timeElement").innerHTML = new Date().toLocaleString();
+    document.querySelector("#timePart").innerHTML = new Date().toLocaleString([], {
+        hour: '2-digit',
+        minute: '2-digit',
+    });
+
+    document.querySelector("#datePart").innerHTML = new Date().toLocaleString(['en-GB'], {
+        day: 'numeric',
+        month: 'numeric',
+        year: 'numeric',
+    });
 
 }, 1000);
 
@@ -44,3 +53,24 @@ function dragElement(element) {
         document.onmousemove = null;
     }
 }
+
+var welcomeScreen = document.querySelector("#welcome");
+
+function closeWindow(element) {
+  element.style.display = "none";
+}
+
+function openWindow(element) {
+  element.style.display = "flex";
+}
+
+var welcomeScreenClose = document.querySelector("#welcomeclose");
+var welcomeScreenOpen = document.querySelector("#welcomeopen");
+
+welcomeScreenClose.addEventListener("click", function(){
+    closeWindow(welcomeScreen);
+});
+
+welcomeScreenOpen.addEventListener("click", function(){
+    openWindow(welcomeScreen);
+})

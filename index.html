@@ -3,16 +3,26 @@
 
   <body style="background-image: url(./images/Mart\ Wallpaper.png); background-size: cover; background-color: #77e6fc; font-family: Helvetica, Noto Sans, sans-serif">
     
-    <div id="welcome" style="position: absolute; top: 50%; left:50%; 
-    transform: translate(-50%, -50%); border: solid; width: fit-content; border-radius: 25px; border-color: rgb(0, 0, 0);padding: 5px; background-color: rgba(0, 225, 255, 0.25); backdrop-filter: blur(5px);">
-      
-      
+    <div class="openbutton" id="welcomeopen" style="">Open</div>
 
-      <div style="border-radius: 25px; border: solid; margin: 5px; margin-top: 40px; background-color: #dfdfdf">  
+    <div class="window" id="welcome" style="position: absolute; display: flex; flex-direction: column; top: 50%; left:50%; 
+    transform: translate(-50%, -50%); border: solid; height: 595px; width: 750px; border-radius: 25px; border-color: rgb(0, 0, 0);padding: 5px; background-color: rgba(0, 225, 255, 0.25); backdrop-filter: blur(5px); box-sizing: border-box;">
+      
+      <div class="windowheader" id="welcomeheader" style="background-color: #fff; border-radius: 15px; padding: 1px; margin: 5px; margin-bottom: 5px; display: flex; height: 30px; width: 720px">
+
+        <div class="closebutton" id="welcomeclose" style="background-color: red; height: 20px; width: 20px; border-radius: 25px; margin: 5px; cursor: pointer;">
+
+          <p style="color: white;">x</p>
+
+        </div>
+
+      </div>
+
+      <div class="windowcontent" style="border-radius: 25px; border: solid; margin: 5px; margin-top: 5px; background-color: #dfdfdf; height: 540px; width: 720px; z-index:1">  
 
         <h1>
 
-          <span style = "padding: 10px; margin: 12px; background-color: #1682ca; color: #ffffff; border-radius: 25px;">Welcome to Mart OS!</span>
+          <span style = "padding: 10px; margin: 12px; background-color: #1682ca; color: #ffffff; border-radius: 1px;">Welcome to Mart OS!</span>
     
         </h1>
 
@@ -32,25 +42,28 @@
 
     </div>
 
-    <div>
+    <div">
 
-      <p style="color: #fff">
+      <!--<p style="color: #fff">Mart OS</p>-->
+      <p id="timeElement" style="position: absolute; bottom: 10px; right: 10px; color: #fff; display: flex; justify-content: flex-end; align-self: flex-end;">
 
-        Mart OS
-
-      </p>
-      <p id="timeElement" style="color: #fff">
-
-        9/29/2026 11:22 PM
+        <span id="timePart"></span>
+        <span id="datePart"></span>
 
       </p>
       
-    </ddiv>
+    </div>
 
     <script src="script.js"></script>
 
-    
-    
   </body>
+
+  <head>
+
+    <script type="module" src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
 
 </html>

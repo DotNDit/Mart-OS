@@ -1,0 +1,23 @@
+.className {
+
+    property1: 5;
+
+    property2: "16px";
+
+    property3: "hidden";
+}
+
+.timeElement {
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.window {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
