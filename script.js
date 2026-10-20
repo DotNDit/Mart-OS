@@ -13,7 +13,7 @@ setInterval(function() {
 
 }, 1000);
 
-dragElement(document.getElementById("welcome"));
+dragElement(document.getElementById("welcomewindow"));
 
 function dragElement(element) {
     var initialX = 0;
@@ -54,7 +54,7 @@ function dragElement(element) {
     }
 }
 
-var welcomeScreen = document.querySelector("#welcome");
+var welcomeScreen = document.querySelector("#welcomewindow");
 
 function closeWindow(element) {
   element.style.display = "none";
